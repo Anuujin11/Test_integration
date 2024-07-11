@@ -12,10 +12,7 @@ body{
 header{
     /*background-color: aqua;*/
     height: 114px;
-    padding-left: 108px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 120px;
+    padding: 12px 120px 12px 108px;
     border-bottom: 1px solid #DDD;
 }
 
@@ -24,6 +21,7 @@ header{
     height: 90px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #img-logo{
@@ -38,11 +36,24 @@ header{
     margin-right: 40px;
 }
 
+#img-mini-logo{
+    display: none;
+    width: 33px;
+    height: 12px;
+    margin-right: 16px;
+}
+
 .header-content h1{
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
     color: #161616;
+}
+
+#img-burger-menu{
+    display: none;
+    width: 24px;
+    height: 24px;
 }
 
 nav{
@@ -67,10 +78,10 @@ nav ul li{
     display: flex;
     align-items: center;
 }
+
 nav ul li:hover{
     color: #000091;
     border-bottom: 2px solid #000091;
-
 }
 
 main{
@@ -79,20 +90,30 @@ main{
 }
 
 @media screen and (max-width: 715px) {
-    #img-logo{
-        width: 44px;
-        margin-right: 20px;
+    header{
+        height: 48px;
+        padding: 0 16px;
     }
 
-    #img-anct{
-        width: 82px;
-        margin-right: 20px;
+    .header-content{
+        height: 48px;
     }
 
-    nav ul li{
-        padding: 8px;
-        font-size: 10px;
-        height: 100%;
+    #img-logo, #img-anct{
+        display: none;
     }
+
+    #img-mini-logo{
+        display: inline;
+    }
+
+    #img-burger-menu{
+        display: inline;
+    }
+
+    nav {
+        display : none;
+    }
+
    
 }
