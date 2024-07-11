@@ -111,9 +111,21 @@ main{
         display: inline;
     }
 
-    nav {
-        display : none;
+    nav{
+        display: none;
+        height: initial;
+        position: absolute;
+        top: 48px;
+        right: 0;
     }
 
-   
+    nav ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li{
+        font-size: 12px;
+        padding: 6px;
+    }
 }
