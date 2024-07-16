@@ -23,7 +23,24 @@
                 <li>Aide et contact</li>
             </ul>
         </nav>
-        <main>main</main>
+        <main>
+            <div id="form-wrapper">
+                <h2>Connexion à Infrastructures numériques</h2>
+                <form>
+                    <div class="form-control">
+                        <label for="e-mail">Adresse électronique</label>
+                        <span>Format attendu : nom@domaine.fr</span>
+                        <input id="e-mail" name="e-mail" type="email"> <!-- name pour la back end plus tard -->
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Mot de passe</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <a href="">Mot de passe oublié?</a>
+                    <button>Se connecter</button>
+                </form>
+            </div>
+        </main>
         <script src="test.js"></script>
     </body>
 </html>
